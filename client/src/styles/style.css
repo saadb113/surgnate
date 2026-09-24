@@ -643,6 +643,11 @@ body.nav-lock{ overflow:hidden; }
 .stock-pill{ display:inline-flex; align-items:center; gap:8px; font-size:.82rem; font-weight:700; color:#1a8a52; }
 .stock-pill .dot{ width:8px; height:8px; border-radius:50%; background:#1a8a52; box-shadow:0 0 0 4px rgba(26,138,82,.15); }
 
+.pd-sizes-row{ margin-bottom:20px; }
+.pd-sizes-label{ display:block; font-size:.78rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color: var(--ink-500); margin-bottom:10px; }
+.pd-sizes-list{ display:flex; flex-wrap:wrap; gap:8px; }
+.pd-size-pill{ display:inline-flex; align-items:center; padding:7px 14px; border-radius: var(--radius-full); border:1.5px solid var(--line-strong); font-size:.84rem; font-weight:600; color: var(--ink-900); background: var(--surface); }
+
 .pd-specs-table{ width:100%; border-collapse: collapse; margin-bottom:26px; }
 .pd-specs-table tr{ border-bottom:1px solid var(--line); }
 .pd-specs-table tr:last-child{ border-bottom:none; }

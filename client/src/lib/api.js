@@ -67,5 +67,9 @@ export const api = {
     const form = new FormData();
     form.append('image', file);
     return request('/upload', { method: 'POST', body: form, auth: true, isForm: true });
-  }
+  },
+
+  // Data export / import
+  exportData: () => request('/data/export', { auth: true }),
+  importData: (payload) => request('/data/import', { method: 'POST', body: payload, auth: true })
 };

@@ -92,8 +92,16 @@ export default function ProductDetail() {
               <span className="stock-pill"><span className="dot" /> In Stock</span>
             </div>
 
+            {product.sizes?.length > 0 && (
+              <div className="pd-sizes-row">
+                <span className="pd-sizes-label">Available Sizes</span>
+                <div className="pd-sizes-list">
+                  {product.sizes.map((s, i) => <span key={i} className="pd-size-pill">{s}</span>)}
+                </div>
+              </div>
+            )}
+
             <table className="pd-specs-table"><tbody>
-              <tr><td>Size</td><td>{product.size}</td></tr>
               <tr><td>Material</td><td>{product.material}</td></tr>
               <tr><td>Finish</td><td>{product.finishDetail}</td></tr>
               <tr><td>Type</td><td>{product.type}</td></tr>

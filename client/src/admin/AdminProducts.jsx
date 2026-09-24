@@ -75,7 +75,7 @@ export default function AdminProducts() {
                   </td>
                   <td>{p.category}</td>
                   <td><span className={`badge-pill ${p.finish === 'Gold' ? 'badge-gold' : 'badge-steel'}`}>{p.finish === 'Gold' ? 'Gold TC' : 'Steel'}</span></td>
-                  <td>{p.size}</td>
+                  <td>{p.sizes?.join(' / ')}</td>
                   <td>{p.featured ? <span className="badge-pill badge-featured">Featured</span> : <span style={{ color: 'var(--ink-400)' }}>—</span>}</td>
                   <td>
                     <div className="admin-row-actions">

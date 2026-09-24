@@ -6,18 +6,20 @@ import authRoutes from './routes/auth.js';
 import productRoutes from './routes/products.js';
 import messageRoutes from './routes/messages.js';
 import uploadRoutes from './routes/upload.js';
+import dataRoutes from './routes/data.js';
 import { UPLOAD_DIR } from './paths.js';
 
 const app = express();
 
 app.use(cors({ origin: process.env.CLIENT_ORIGIN || '*' }));
-app.use(express.json({ limit: '2mb' }));
+app.use(express.json({ limit: '10mb' }));
 app.use('/uploads', express.static(UPLOAD_DIR));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/data', dataRoutes);
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 

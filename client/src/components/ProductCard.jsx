@@ -18,7 +18,7 @@ export default function ProductCard({ product, delay = 0 }) {
         <span className="prod-cat">{product.category} Scissors</span>
         <h4>{product.name}</h4>
         <p style={{ fontSize: '.86rem', margin: 0 }}>{product.tagline}</p>
-        <div className="prod-specs"><span><b>{product.size}</b></span><span>{product.type}</span></div>
+        <div className="prod-specs"><span><b>{product.sizes?.join(' / ')}</b></span><span>{product.type}</span></div>
         <div className="prod-foot">
           <span className="prod-link">View Details <Icon name="arrowRight" /></span>
         </div>

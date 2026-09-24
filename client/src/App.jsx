@@ -23,6 +23,7 @@ import AdminDashboard from './admin/AdminDashboard';
 import AdminProducts from './admin/AdminProducts';
 import AdminProductForm from './admin/AdminProductForm';
 import AdminMessages from './admin/AdminMessages';
+import AdminData from './admin/AdminData';
 
 export default function App() {
   return (
@@ -60,6 +61,7 @@ export default function App() {
                   <Route path="products/new" element={<AdminProductForm />} />
                   <Route path="products/:id/edit" element={<AdminProductForm />} />
                   <Route path="messages" element={<AdminMessages />} />
+                  <Route path="data" element={<AdminData />} />
                 </Route>
               </Routes>
             </MessagesProvider>

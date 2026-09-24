@@ -7,7 +7,7 @@ import { api, assetUrl } from '../lib/api';
 import { MAIN_CATEGORIES } from '../lib/categories';
 
 const EMPTY = {
-  name: '', slug: '', category: 'Operating', mainCategory: MAIN_CATEGORIES[0], finish: 'Steel', size: '', material: '',
+  name: '', slug: '', category: 'Operating', mainCategory: MAIN_CATEGORIES[0], finish: 'Steel', sizes: [''], material: '',
   finishDetail: '', type: '', tip: '', usage: '', tagline: '', short: '', description: '',
   features: [''], images: [], featured: false
 };
@@ -32,7 +32,8 @@ export default function AdminProductForm() {
       setForm({
         ...EMPTY,
         ...existing,
-        features: existing.features?.length ? existing.features : ['']
+        features: existing.features?.length ? existing.features : [''],
+        sizes: existing.sizes?.length ? existing.sizes : ['']
       });
       setLoaded(true);
     }
@@ -42,18 +43,18 @@ export default function AdminProductForm() {
     setForm(f => ({ ...f, [field]: value }));
   }
 
-  function setFeature(i, value) {
+  function setListItem(field, i, value) {
     setForm(f => {
-      const features = [...f.features];
-      features[i] = value;
-      return { ...f, features };
+      const list = [...f[field]];
+      list[i] = value;
+      return { ...f, [field]: list };
     });
   }
-  function addFeature() {
-    setForm(f => ({ ...f, features: [...f.features, ''] }));
+  function addListItem(field) {
+    setForm(f => ({ ...f, [field]: [...f[field], ''] }));
   }
-  function removeFeature(i) {
-    setForm(f => ({ ...f, features: f.features.filter((_, idx) => idx !== i) }));
+  function removeListItem(field, i) {
+    setForm(f => ({ ...f, [field]: f[field].filter((_, idx) => idx !== i) }));
   }
 
   async function onPickImages(e) {
@@ -82,7 +83,7 @@ export default function AdminProductForm() {
     if (!form.name.trim()) { showToast('Product name is required', 'alert'); return; }
 
     setSaving(true);
-    const payload = { ...form, features: form.features.filter(f => f.trim()) };
+    const payload = { ...form, features: form.features.filter(f => f.trim()), sizes: form.sizes.filter(s => s.trim()) };
 
     try {
       if (isEdit) {
@@ -163,8 +164,19 @@ export default function AdminProductForm() {
 
           <div className="admin-form-section">
             <h4>Specifications</h4>
+            <div className="admin-field">
+              <label>Sizes <span className="hint">add every size this product is available in — shown on the product page</span></label>
+              <div className="list-editor">
+                {form.sizes.map((s, i) => (
+                  <div className="list-editor-row" key={i}>
+                    <input value={s} onChange={e => setListItem('sizes', i, e.target.value)} placeholder='5.5" (14 cm)' />
+                    <button type="button" className="admin-icon-btn danger" onClick={() => removeListItem('sizes', i)} aria-label="Remove size"><Icon name="trash" /></button>
+                  </div>
+                ))}
+                <button type="button" className="add-row-btn" onClick={() => addListItem('sizes')}><Icon name="plus" /> Add Size</button>
+              </div>
+            </div>
             <div className="admin-form-grid-2">
-              <div className="admin-field"><label>Size</label><input value={form.size} onChange={e => set('size', e.target.value)} placeholder='5.5" (14 cm)' /></div>
               <div className="admin-field"><label>Type</label><input value={form.type} onChange={e => set('type', e.target.value)} placeholder="Straight / Curved" /></div>
               <div className="admin-field"><label>Material</label><input value={form.material} onChange={e => set('material', e.target.value)} placeholder="High-Grade Stainless Steel" /></div>
               <div className="admin-field"><label>Finish Detail</label><input value={form.finishDetail} onChange={e => set('finishDetail', e.target.value)} placeholder="Mirror Finish" /></div>
@@ -178,11 +190,11 @@ export default function AdminProductForm() {
             <div className="list-editor">
               {form.features.map((f, i) => (
                 <div className="list-editor-row" key={i}>
-                  <input value={f} onChange={e => setFeature(i, e.target.value)} placeholder={`Feature ${i + 1}`} />
-                  <button type="button" className="admin-icon-btn danger" onClick={() => removeFeature(i)} aria-label="Remove feature"><Icon name="trash" /></button>
+                  <input value={f} onChange={e => setListItem('features', i, e.target.value)} placeholder={`Feature ${i + 1}`} />
+                  <button type="button" className="admin-icon-btn danger" onClick={() => removeListItem('features', i)} aria-label="Remove feature"><Icon name="trash" /></button>
                 </div>
               ))}
-              <button type="button" className="add-row-btn" onClick={addFeature}><Icon name="plus" /> Add Feature</button>
+              <button type="button" className="add-row-btn" onClick={() => addListItem('features')}><Icon name="plus" /> Add Feature</button>
             </div>
           </div>
         </div>

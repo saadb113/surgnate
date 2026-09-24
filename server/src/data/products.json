@@ -5,7 +5,6 @@
     "name": "Lister Bandage Scissors Straight",
     "category": "lister bandage scissors",
     "finish": "Steel",
-    "size": "5.5\" (14 cm)",
     "material": "High-Grade Stainless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -26,7 +25,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T16:11:43.761Z"
+    "updatedAt": "2026-09-15T16:11:43.761Z",
+    "sizes": [
+      "5.5\" (14 cm)"
+    ]
   },
   {
     "id": "p2",
@@ -34,7 +36,6 @@
     "name": "Iris Scissor",
     "category": "Iris",
     "finish": "Steel",
-    "size": "4.5\" (11 cm)",
     "material": "High-Grade Stainless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight, Fine Tip",
@@ -56,7 +57,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T16:14:34.955Z"
+    "updatedAt": "2026-09-15T16:14:34.955Z",
+    "sizes": [
+      "4.5\" (11 cm)"
+    ]
   },
   {
     "id": "p3",
@@ -64,7 +68,6 @@
     "name": "Mayo TC Scissor",
     "category": "Mayo",
     "finish": "Gold",
-    "size": "5.5\" (14 cm)",
     "material": "Stainless Steel with Tungsten Carbide Inserts",
     "finishDetail": "Mirror Finish, Gold-Plated Handles",
     "type": "Straight",
@@ -86,7 +89,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T16:19:40.777Z"
+    "updatedAt": "2026-09-15T16:19:40.777Z",
+    "sizes": [
+      "5.5\" (14 cm)"
+    ]
   },
   {
     "id": "p4",
@@ -94,7 +100,6 @@
     "name": "TC Metzenbaum Scissors-Straight ",
     "category": "TC Metzenbaum Scissor",
     "finish": "Gold",
-    "size": "5.7\" (14.5 cm)",
     "material": "High-Grade Stainless Steel with TC Inserts",
     "finishDetail": "Mirror Finish, Gold-Plated Handles",
     "type": "Straight",
@@ -116,7 +121,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T16:27:03.254Z"
+    "updatedAt": "2026-09-15T16:27:03.254Z",
+    "sizes": [
+      "5.7\" (14.5 cm)"
+    ]
   },
   {
     "id": "p6",
@@ -124,7 +132,6 @@
     "name": "Operating Scissor — Straight",
     "category": "Operating",
     "finish": "Steel",
-    "size": "5.1\" (13 cm)",
     "material": "High-Grade Stainless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -145,7 +152,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T16:59:17.823Z"
+    "updatedAt": "2026-09-15T16:59:17.823Z",
+    "sizes": [
+      "5.1\" (13 cm)"
+    ]
   },
   {
     "id": "p7",
@@ -153,7 +163,6 @@
     "name": "Operating Scissor Curved",
     "category": "Operating",
     "finish": "Steel",
-    "size": "5.1\" (13 cm)",
     "material": "High-Grade Stainless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Angular, Safety Nodule",
@@ -174,7 +183,10 @@
     ],
     "featured": true,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T17:09:46.982Z"
+    "updatedAt": "2026-09-15T17:09:46.982Z",
+    "sizes": [
+      "5.1\" (13 cm)"
+    ]
   },
   {
     "id": "p8",
@@ -182,7 +194,6 @@
     "name": "Metzenbaum Scissor — Curved",
     "category": "Metzenbaum",
     "finish": "Steel",
-    "size": "5.7\" (14.5 cm)",
     "material": "High-Grade Stainless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Curved",
@@ -204,7 +215,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-15T17:13:58.220Z"
+    "updatedAt": "2026-09-15T17:13:58.220Z",
+    "sizes": [
+      "5.7\" (14.5 cm)"
+    ]
   },
   {
     "id": "p9",
@@ -212,7 +226,6 @@
     "name": "Mayo-Curved Scissors ",
     "category": "Mayo",
     "finish": "Steel",
-    "size": "5.5\" (14cm)",
     "material": "Stainless Steel ",
     "finishDetail": "Mirror Finish & Gold Plating",
     "type": "Curved",
@@ -233,7 +246,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-01T12:00:00.000Z",
-    "updatedAt": "2026-09-16T16:18:02.612Z"
+    "updatedAt": "2026-09-16T16:18:02.612Z",
+    "sizes": [
+      "5.5\" (14cm)"
+    ]
   },
   {
     "id": "uMClkE4rAw",
@@ -242,7 +258,6 @@
     "category": "Kelly Hemostatic Forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5) 14 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "mirror finish",
     "type": "straight",
@@ -263,7 +278,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:22:14.537Z",
-    "updatedAt": "2026-09-21T16:22:14.537Z"
+    "updatedAt": "2026-09-21T16:22:14.537Z",
+    "sizes": [
+      "(5.5) 14 cm"
+    ]
   },
   {
     "id": "UR7-yAYGtB",
@@ -272,7 +290,6 @@
     "category": "Mosquito Hemostatic Forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5\") 12.5 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -293,7 +310,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:29:30.449Z",
-    "updatedAt": "2026-09-21T16:29:30.449Z"
+    "updatedAt": "2026-09-21T16:29:30.449Z",
+    "sizes": [
+      "(5\") 12.5 cm"
+    ]
   },
   {
     "id": "YQkB44kz82",
@@ -302,7 +322,6 @@
     "category": "allis tissue forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5\") 12.5 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -323,7 +342,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:34:06.665Z",
-    "updatedAt": "2026-09-21T16:34:06.665Z"
+    "updatedAt": "2026-09-21T16:34:06.665Z",
+    "sizes": [
+      "(5\") 12.5 cm"
+    ]
   },
   {
     "id": "54DY1VAnnP",
@@ -332,7 +354,6 @@
     "category": "kocher forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5\") 14 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -353,7 +374,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:38:54.512Z",
-    "updatedAt": "2026-09-21T16:38:54.512Z"
+    "updatedAt": "2026-09-21T16:38:54.512Z",
+    "sizes": [
+      "(5.5\") 14 cm"
+    ]
   },
   {
     "id": "E7mkAgINMD",
@@ -362,7 +386,6 @@
     "category": "babcock forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5\") 14 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -383,7 +406,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:43:44.408Z",
-    "updatedAt": "2026-09-21T16:43:44.408Z"
+    "updatedAt": "2026-09-21T16:43:44.408Z",
+    "sizes": [
+      "(5.5\") 14 cm"
+    ]
   },
   {
     "id": "rDpAwrlbdU",
@@ -392,7 +418,6 @@
     "category": "sponge holding forceps",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5\") 14 cm",
     "material": "",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -413,7 +438,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:49:20.881Z",
-    "updatedAt": "2026-09-21T16:49:20.881Z"
+    "updatedAt": "2026-09-21T16:49:20.881Z",
+    "sizes": [
+      "(5.5\") 14 cm"
+    ]
   },
   {
     "id": "WoY6hPAfbF",
@@ -422,7 +450,6 @@
     "category": "backhaus towel clamp",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "5.1\")13 cm",
     "material": "High-Grade-Stainsless Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -443,7 +470,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-21T16:54:49.841Z",
-    "updatedAt": "2026-09-21T16:54:49.841Z"
+    "updatedAt": "2026-09-21T16:54:49.841Z",
+    "sizes": [
+      "5.1\")13 cm"
+    ]
   },
   {
     "id": "PLPEesDF9X",
@@ -452,7 +482,6 @@
     "category": "mayo hegar needle holder",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5\") 14 cm",
     "material": "High-Grade-Stainless-Steel",
     "finishDetail": "Mirror Finish",
     "type": "Staight",
@@ -473,7 +502,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-22T12:46:32.062Z",
-    "updatedAt": "2026-09-22T12:46:32.062Z"
+    "updatedAt": "2026-09-22T12:46:32.062Z",
+    "sizes": [
+      "(5.5\") 14 cm"
+    ]
   },
   {
     "id": "87lgQxajv-",
@@ -482,7 +514,6 @@
     "category": "crile wood needle holder",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(6\") 15 cm",
     "material": "Hight-Grade-Stainless-Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -503,7 +534,10 @@
     ],
     "featured": false,
     "createdAt": "2026-09-22T12:48:54.538Z",
-    "updatedAt": "2026-09-22T12:51:54.324Z"
+    "updatedAt": "2026-09-22T12:51:54.324Z",
+    "sizes": [
+      "(6\") 15 cm"
+    ]
   },
   {
     "id": "Uvzo7s5xD9",
@@ -512,7 +546,6 @@
     "category": "olsen hegar needle holder",
     "mainCategory": "Surgical Forceps & Clamp",
     "finish": "Steel",
-    "size": "(5.5\")14 cm",
     "material": "High-Grade-Stainless-Steel",
     "finishDetail": "Mirror Finish",
     "type": "Straight",
@@ -533,6 +566,9 @@
     ],
     "featured": false,
     "createdAt": "2026-09-22T12:54:45.009Z",
-    "updatedAt": "2026-09-22T12:57:22.528Z"
+    "updatedAt": "2026-09-22T12:57:22.528Z",
+    "sizes": [
+      "(5.5\")14 cm"
+    ]
   }
 ]
