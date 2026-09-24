@@ -1,0 +1,538 @@
+[
+  {
+    "id": "p1",
+    "slug": "lister-bandage-scissors-straight",
+    "name": "Lister Bandage Scissors Straight",
+    "category": "lister bandage scissors",
+    "finish": "Steel",
+    "size": "5.5\" (14 cm)",
+    "material": "High-Grade Stainless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Sharp / Sharp",
+    "usage": "Used to securely hold wound dressings, gauze, and medical pads in place. Suitable for hospitals, clinics, and first-aid care.",
+    "tagline": "The workhorse of every tray",
+    "short": "Lister Bandage provides secure, comfortable, and reliable support for wound dressing and everyday medical care.",
+    "description": "Lister Bandage\n\nLister Bandage is a reliable medical dressing solution designed to provide secure support and protection during wound care. It helps keep dressings firmly in place while providing comfortable and convenient application.\n\nSuitable for use in hospitals, clinics, healthcare facilities, and general first-aid settings, Lister Bandage is designed for practical and dependable everyday medical care.\n\nKey Features:\n\nSecure and reliable dressing support\nComfortable for regular use\nEasy to apply and handle\nSuitable for hospitals, clinics, and first-aid care\nHelps keep wound dressings firmly in place",
+    "features": [
+      "Secure dressing support",
+      "Comfortable to use",
+      "Easy application",
+      "Reliable wound protection",
+      "Suitable for medical & first-aid use"
+    ],
+    "images": [
+      "/uploads/kMSL2qmj8FUa.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T16:11:43.761Z"
+  },
+  {
+    "id": "p2",
+    "slug": "iris-scissor",
+    "name": "Iris Scissor",
+    "category": "Iris",
+    "finish": "Steel",
+    "size": "4.5\" (11 cm)",
+    "material": "High-Grade Stainless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight, Fine Tip",
+    "tip": "Sharp / Sharp",
+    "usage": "Delicate ophthalmic & fine tissue cutting",
+    "tagline": "Precision where the margin is a millimetre",
+    "short": "Iris Scissors are precision surgical instruments designed for accurate cutting and delicate dissection in clinical and surgical procedures.",
+    "description": "Iris Scissors are precision surgical scissors designed for delicate cutting and fine dissection procedures. Their sharp, fine blades provide accurate control and smooth cutting, making them suitable for a range of surgical and clinical applications.",
+    "features": [
+      "Slim 11 cm profile for confined surgical fields",
+      "Fine, needle-sharp tips for accurate micro-cutting",
+      "High-grade stainless steel for long-term sharpness",
+      "Autoclavable and built for repeated reuse",
+      "Corrosion-resistant mirror polish",
+      "Balanced, lightweight handling"
+    ],
+    "images": [
+      "/uploads/UEwgjznYowza.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T16:14:34.955Z"
+  },
+  {
+    "id": "p3",
+    "slug": "mayo-tc-scissor",
+    "name": "Mayo TC Scissor",
+    "category": "Mayo",
+    "finish": "Gold",
+    "size": "5.5\" (14 cm)",
+    "material": "Stainless Steel with Tungsten Carbide Inserts",
+    "finishDetail": "Mirror Finish, Gold-Plated Handles",
+    "type": "Straight",
+    "tip": "Sharp / Blunt",
+    "usage": "General cutting & tissue handling",
+    "tagline": "Tungsten-carbide edge, gold-standard grip",
+    "short": "Mayo Scissors are durable surgical scissors designed for precise cutting of tissue, sutures, and surgical materials.",
+    "description": "Mayo TC Scissors\n\nMayo TC Scissors are precision surgical instruments designed for controlled and efficient cutting during surgical procedures. Featuring tungsten carbide inserts, they provide enhanced cutting performance, durability, and long-lasting sharpness compared with standard surgical scissors.\n\nTheir robust construction and precise blades make them suitable for cutting tissue, sutures, dressings, and other surgical materials. Ideal for hospitals, clinics, and professional surgical environments where reliable performance and accuracy are essential.\n\nKey Features:\n\nTungsten carbide inserts for enhanced durability\nExcellent cutting performance and precision\nLong-lasting blade sharpness\nStrong and reliable construction\nSuitable for various surgical applications",
+    "features": [
+      "Tungsten Carbide (TC) inserts for superior edge retention",
+      "Gold-plated handles — instantly identifiable on the tray",
+      "Ergonomic ring design reduces hand fatigue in long procedures",
+      "Fully autoclavable and reusable",
+      "Corrosion-resistant, mirror-polished blades",
+      "Precision box-lock for smooth, controlled action"
+    ],
+    "images": [
+      "/uploads/H5K-Yvq0HSsO.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T16:19:40.777Z"
+  },
+  {
+    "id": "p4",
+    "slug": "tc-metzenbaum-scissor",
+    "name": "TC Metzenbaum Scissors-Straight ",
+    "category": "TC Metzenbaum Scissor",
+    "finish": "Gold",
+    "size": "5.7\" (14.5 cm)",
+    "material": "High-Grade Stainless Steel with TC Inserts",
+    "finishDetail": "Mirror Finish, Gold-Plated Handles",
+    "type": "Straight",
+    "tip": "Sharp / Blunt",
+    "usage": "Used for delicate tissue dissection and precise cutting during surgical procedures.",
+    "tagline": "TC Metzenbaum Scissors — Precision for Every Delicate Cut.",
+    "short": "TC Metzenbaum Scissors are precision surgical instruments designed for delicate tissue dissection and controlled, accurate cutting.",
+    "description": "TC Metzenbaum Scissors are precision surgical instruments designed for delicate tissue dissection and fine cutting. Their tungsten carbide inserts provide excellent sharpness, durability, and controlled performance, making them ideal for precise surgical procedures.",
+    "features": [
+      "Gold-plated handles for premium, ergonomic feel",
+      "Tungsten Carbide inserts for long-lasting sharpness",
+      "Precise curve improves visibility during dissection",
+      "Fully autoclavable for repeated sterilization",
+      "High-grade stainless steel body resists corrosion",
+      "Mirror-polished finish throughout"
+    ],
+    "images": [
+      "/uploads/k3gZy1bcTIjo.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T16:27:03.254Z"
+  },
+  {
+    "id": "p6",
+    "slug": "operating-scissor-straight",
+    "name": "Operating Scissor — Straight",
+    "category": "Operating",
+    "finish": "Steel",
+    "size": "5.1\" (13 cm)",
+    "material": "High-Grade Stainless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Blunt / Blunt",
+    "usage": "Used for precise cutting of tissue, sutures, dressings, and other surgical materials.",
+    "tagline": "Operating Scissors Straight — Precision Cutting for Reliable Surgical Performance.",
+    "short": "Straight Operating Scissors are precision surgical instruments designed for accurate cutting of tissue, sutures, and surgical materials.",
+    "description": "Straight Operating Scissors are reliable surgical instruments designed for precise and controlled cutting during surgical procedures. Their straight, sharp blades provide excellent visibility and accuracy, making them suitable for cutting tissue, sutures, dressings, and other surgical materials.\n\nDesigned for professional use, these scissors offer dependable performance and comfortable handling in hospitals, clinics, and surgical environments.",
+    "features": [
+      "Precision cutting",
+      "Sharp, durable blades",
+      "Smooth operation",
+      "Comfortable handling",
+      "Suitable for surgical procedures"
+    ],
+    "images": [
+      "/uploads/zxTZZcHRVswk.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T16:59:17.823Z"
+  },
+  {
+    "id": "p7",
+    "slug": "operating-scissor-curved",
+    "name": "Operating Scissor Curved",
+    "category": "Operating",
+    "finish": "Steel",
+    "size": "5.1\" (13 cm)",
+    "material": "High-Grade Stainless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Angular, Safety Nodule",
+    "tip": "Blunt Safety Tip",
+    "usage": "Used for precise cutting of tissue, sutures, dressings, and other surgical materials.",
+    "tagline": "Operating Scissors Curved — Precision Cutting with Enhanced Surgical Control.",
+    "short": "Curved Operating Scissors are precision surgical instruments designed for controlled cutting and easy access around delicate tissues and surgical sites.",
+    "description": "Curved Operating Scissors are precision surgical instruments designed for controlled cutting during surgical procedures. Their curved blades provide improved access and visibility around tissues and confined surgical areas, allowing smooth and accurate cutting of tissue, sutures, dressings, and other surgical materials.\n\nDesigned for professional use, these scissors offer reliable performance, precise handling, and durability in hospitals, clinics, and surgical environments.",
+    "features": [
+      "Curved precision blades",
+      "Accurate and controlled cutting",
+      "Smooth operation",
+      "Comfortable handling",
+      "Durable surgical construction"
+    ],
+    "images": [
+      "/uploads/OBpVQOuV90r-.jpeg"
+    ],
+    "featured": true,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T17:09:46.982Z"
+  },
+  {
+    "id": "p8",
+    "slug": "metzenbaum-curved-scissor",
+    "name": "Metzenbaum Scissor — Curved",
+    "category": "Metzenbaum",
+    "finish": "Steel",
+    "size": "5.7\" (14.5 cm)",
+    "material": "High-Grade Stainless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Curved",
+    "tip": "Blunt / Blunt, Fine Tip",
+    "usage": "Precise cutting & tissue handling",
+    "tagline": "Metzenbaum Scissors Curved — Precision Cutting for Delicate Tissue Dissection.",
+    "short": "Curved Metzenbaum Scissors are precision surgical instruments designed for delicate tissue dissection and smooth, controlled cutting.",
+    "description": "Curved Metzenbaum Scissors are precision surgical instruments designed for delicate tissue dissection and controlled cutting. Their curved blades provide improved access to tissues and hard-to-reach surgical areas, allowing smooth and accurate cutting during procedures.\n\nDesigned for professional surgical use, these scissors offer precise handling, reliable performance, and durability for hospitals, clinics, and healthcare facilities.",
+    "features": [
+      "Long curved blades reach deep surgical fields",
+      "Fine blunt tips minimise trauma to surrounding tissue",
+      "High-grade stainless steel construction",
+      "Fully autoclavable and reusable",
+      "Corrosion-resistant mirror finish",
+      "Balanced for extended, fatigue-free use"
+    ],
+    "images": [
+      "/uploads/QTwgzvESHKTI.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-15T17:13:58.220Z"
+  },
+  {
+    "id": "p9",
+    "slug": "mayo-curved-scissor",
+    "name": "Mayo-Curved Scissors ",
+    "category": "Mayo",
+    "finish": "Steel",
+    "size": "5.5\" (14cm)",
+    "material": "Stainless Steel ",
+    "finishDetail": "Mirror Finish & Gold Plating",
+    "type": "Curved",
+    "tip": "Blunt / Blunt, Fine Tip",
+    "usage": "Cutting and dissecting tough tissues, sutures, and surgical materials.",
+    "tagline": "Strength in Every Cut. Precision in Every Procedure.",
+    "short": "Premium-quality Mayo Curved Scissors designed for cutting and dissecting tough tissues, sutures, and surgical materials. Crafted for precision, durability, and reliable performance in various surgical procedures.",
+    "description": "Surgnate Mayo Curved Scissors are precision-engineered surgical instruments designed for cutting and dissecting tough tissues, sutures, and surgical materials. Featuring strong, curved blades, these scissors provide excellent control and efficient cutting performance during surgical procedures. Manufactured with high-quality stainless steel, they offer durability, corrosion resistance, and reliable functionality. The ergonomic design ensures a comfortable grip and smooth handling, making them suitable for hospitals, surgical centers, and professional healthcare practitioners.",
+    "features": [
+      "Curved precision blades",
+      "High-quality stainless steel",
+      "Sharp and reliable cutting",
+      "Ergonomic finger-ring design",
+      "Durable and corrosion-resistant"
+    ],
+    "images": [
+      "/uploads/6i4e32l1zfMp.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-01T12:00:00.000Z",
+    "updatedAt": "2026-09-16T16:18:02.612Z"
+  },
+  {
+    "id": "uMClkE4rAw",
+    "slug": "kelly-hemostatic-forceps",
+    "name": "Kelly Hemostatic Forceps",
+    "category": "Kelly Hemostatic Forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5) 14 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "mirror finish",
+    "type": "straight",
+    "tip": "Non-Sharp / Blunt",
+    "usage": "Used to clamp blood vessels and control bleeding during surgical procedures.",
+    "tagline": "Precision Hemostasis, Reliable Control.",
+    "short": "Kelly Hemostatic Forceps for secure vessel clamping and reliable bleeding control.",
+    "description": "Kelly Hemostatic Forceps are precision surgical instruments designed for clamping blood vessels and controlling bleeding during surgical procedures. Featuring serrated jaws and a secure locking mechanism, they provide reliable grip, controlled handling, and precise vessel occlusion. Suitable for a range of general and specialized surgical applications.",
+    "features": [
+      "Serrated jaws for a secure grip",
+      "Ratchet locking mechanism for controlled clamping",
+      "Precision-crafted tips for accurate handling",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable operation"
+    ],
+    "images": [
+      "/uploads/-ttdD9uzNE8W.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:22:14.537Z",
+    "updatedAt": "2026-09-21T16:22:14.537Z"
+  },
+  {
+    "id": "UR7-yAYGtB",
+    "slug": "mosquito-hemostatic-forceps",
+    "name": "Mosquito Hemostatic Forceps",
+    "category": "Mosquito Hemostatic Forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5\") 12.5 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Tip: Non-Sharp / Blunt",
+    "usage": "Clamping small vessels and controlling bleeding.",
+    "tagline": "Precision Clamping, Reliable Hemostasis.",
+    "short": "Mosquito Hemostatic Forceps designed for precise clamping of small blood vessels and effective bleeding control during surgical procedures.",
+    "description": "Mosquito Hemostatic Forceps are precision surgical instruments designed for clamping small blood vessels and controlling bleeding during surgical procedures. Their fine serrated jaws provide a secure grip, while the locking ratchet allows controlled and reliable clamping.",
+    "features": [
+      "Fine serrated jaws",
+      "Secure ratchet locking mechanism",
+      "Precision tapered tips",
+      "Durable stainless steel construction",
+      "Comfortable ergonomic finger rings"
+    ],
+    "images": [
+      "/uploads/AUXdK7-Rukx6.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:29:30.449Z",
+    "updatedAt": "2026-09-21T16:29:30.449Z"
+  },
+  {
+    "id": "YQkB44kz82",
+    "slug": "mosquito-hemostatic-forceps-2",
+    "name": "Allis Tissue Forceps",
+    "category": "allis tissue forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5\") 12.5 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Non-Sharp / Blunt",
+    "usage": "Clamping small vessels and controlling bleeding.",
+    "tagline": "Precision Grip, Reliable Bleeding Control.",
+    "short": "Mosquito Hemostatic Forceps designed for precise clamping of small vessels and reliable bleeding control during surgical procedures.",
+    "description": "Mosquito Hemostatic Forceps are precision surgical instruments designed for clamping small blood vessels and controlling bleeding during surgical procedures. Their fine serrated jaws provide a secure grip, while the locking ratchet allows controlled and reliable clamping.",
+    "features": [
+      "Fine serrated jaws",
+      "Secure ratchet locking mechanism",
+      "Precision tapered tips",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable handling"
+    ],
+    "images": [
+      "/uploads/VBn-AFuUAFl5.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:34:06.665Z",
+    "updatedAt": "2026-09-21T16:34:06.665Z"
+  },
+  {
+    "id": "54DY1VAnnP",
+    "slug": "kocher-forceps",
+    "name": "Kocher Forceps",
+    "category": "kocher forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5\") 14 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Sharp / Toothed",
+    "usage": "Grasping and holding tissues securely during surgical procedures.",
+    "tagline": "Secure Grip, Precise Tissue Control.",
+    "short": "Kocher Forceps designed for secure grasping and firm tissue handling during surgical procedures.",
+    "description": "Kocher Forceps are precision surgical instruments designed for firm grasping and secure handling of tissues during surgical procedures. Their toothed jaws provide a strong, reliable grip for controlled tissue manipulation.",
+    "features": [
+      "Toothed jaws for a secure grip",
+      "Strong locking ratchet mechanism",
+      "Precision-crafted tips for controlled handling",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable use"
+    ],
+    "images": [
+      "/uploads/LiTeuYU2HE6i.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:38:54.512Z",
+    "updatedAt": "2026-09-21T16:38:54.512Z"
+  },
+  {
+    "id": "E7mkAgINMD",
+    "slug": "babcock-forceps",
+    "name": "Babcock Forceps",
+    "category": "babcock forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5\") 14 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "harp / Toothed",
+    "usage": "Grasping and holding tissues securely during surgical procedures.",
+    "tagline": "Secure Grip, Confident Tissue Control.",
+    "short": "Kocher Forceps designed for secure tissue grasping and controlled handling during surgical procedures.",
+    "description": "Kocher Forceps are precision surgical instruments designed for secure grasping and firm handling of tissues during surgical procedures. Their toothed jaws provide a strong, reliable grip, while the locking ratchet allows controlled and stable handling.",
+    "features": [
+      "Toothed jaws for a firm grip",
+      "Secure ratchet locking mechanism",
+      "Precision-crafted tips",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable handling"
+    ],
+    "images": [
+      "/uploads/fQvWoYpA5BpU.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:43:44.408Z",
+    "updatedAt": "2026-09-21T16:43:44.408Z"
+  },
+  {
+    "id": "rDpAwrlbdU",
+    "slug": "sponge-holding-forceps",
+    "name": "Sponge Holding Forceps",
+    "category": "sponge holding forceps",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5\") 14 cm",
+    "material": "",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Sharp / Toothed",
+    "usage": "Grasping and holding tissues securely during surgical procedures.",
+    "tagline": "Secure Hold, Precise Surgical Control.",
+    "short": "Kocher Forceps designed for secure tissue grasping and controlled handling during surgical procedures.",
+    "description": "Kocher Forceps are precision surgical instruments designed for secure grasping and firm handling of tissues during surgical procedures. Their toothed jaws provide a strong, reliable grip, while the locking ratchet ensures controlled and stable tissue handling.",
+    "features": [
+      "Toothed jaws for a secure grip",
+      "Strong ratchet locking mechanism",
+      "Precision-crafted tips",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable handling"
+    ],
+    "images": [
+      "/uploads/i4aZriWJ7Js1.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:49:20.881Z",
+    "updatedAt": "2026-09-21T16:49:20.881Z"
+  },
+  {
+    "id": "WoY6hPAfbF",
+    "slug": "backhaus-towel-clamp",
+    "name": "Backhaus Towel Clamp",
+    "category": "backhaus towel clamp",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "5.1\")13 cm",
+    "material": "High-Grade-Stainsless Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Sharp / Pointed",
+    "usage": "Securing surgical drapes in place during procedures.",
+    "tagline": "Secure Grip, Reliable Draping.",
+    "short": "Backhaus Towel Clamp designed to securely hold surgical drapes in place during procedures.",
+    "description": "Backhaus Towel Clamps are precision surgical instruments designed to securely hold surgical drapes in place during procedures. Their pointed jaws provide a firm grip on draping material, while the locking mechanism ensures stable and reliable positioning.",
+    "features": [
+      "Pointed jaws for a firm grip",
+      "Secure ratchet locking mechanism",
+      "Precision-crafted tips for controlled handling",
+      "Durable stainless steel construction",
+      "Ergonomic finger rings for comfortable use"
+    ],
+    "images": [
+      "/uploads/0e3d3swZRUH1.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-21T16:54:49.841Z",
+    "updatedAt": "2026-09-21T16:54:49.841Z"
+  },
+  {
+    "id": "PLPEesDF9X",
+    "slug": "mayo-hegar-needle-holder",
+    "name": "Mayo Hegar Needle Holder",
+    "category": "mayo hegar needle holder",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5\") 14 cm",
+    "material": "High-Grade-Stainless-Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Staight",
+    "tip": "Sharp / Blunt",
+    "usage": "Holds surgical needles securely during suturing.",
+    "tagline": "Precision Grip. Secure Suturing.",
+    "short": "Mayo-Hegar Needle Holder designed for secure needle handling and precise, controlled suturing during surgical procedures.",
+    "description": "The Mayo-Hegar Needle Holder is a durable surgical instrument designed for securely holding and controlling needles during suturing procedures. Its serrated jaws provide a firm, reliable grip, allowing surgeons to achieve precise needle placement and smooth, controlled suturing. Suitable for a wide range of general and specialized surgical applications.",
+    "features": [
+      "Serrated jaws for secure needle grip",
+      "Durable stainless-steel construction",
+      "Precise needle control",
+      "Ratchet locking mechanism",
+      "Ergonomic ring handles"
+    ],
+    "images": [
+      "/uploads/21dBe_rSP-LY.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-22T12:46:32.062Z",
+    "updatedAt": "2026-09-22T12:46:32.062Z"
+  },
+  {
+    "id": "87lgQxajv-",
+    "slug": "crile-wood-needle-holder",
+    "name": "Crile Wood Needle Holder",
+    "category": "crile wood needle holder",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(6\") 15 cm",
+    "material": "Hight-Grade-Stainless-Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Blunt",
+    "usage": "Holds surgical needles during suturing.",
+    "tagline": "Precision Grip. Confident Suturing.",
+    "short": "Crile-Wood Needle Holder designed for precise needle handling and secure control during suturing procedures.",
+    "description": "The Crile-Wood Needle Holder is a precision surgical instrument designed for securely holding and controlling needles during suturing procedures. Its fine, serrated jaws provide excellent needle grip and precise handling, making it suitable for delicate and general surgical applications. Crafted from durable stainless steel, it offers reliable performance and comfortable control during repeated use.",
+    "features": [
+      "Fine serrated jaws",
+      "Secure needle grip",
+      "Blunt working tip",
+      "Durable stainless-steel construction",
+      "Ratchet locking mechanism"
+    ],
+    "images": [
+      "/uploads/_0dmLuEY2Km7.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-22T12:48:54.538Z",
+    "updatedAt": "2026-09-22T12:51:54.324Z"
+  },
+  {
+    "id": "Uvzo7s5xD9",
+    "slug": "olsen-hegar-needle-holder",
+    "name": "Olsen Hegar Needle Holder",
+    "category": "olsen hegar needle holder",
+    "mainCategory": "Surgical Forceps & Clamp",
+    "finish": "Steel",
+    "size": "(5.5\")14 cm",
+    "material": "High-Grade-Stainless-Steel",
+    "finishDetail": "Mirror Finish",
+    "type": "Straight",
+    "tip": "Blunt",
+    "usage": "Holds needles and cuts suture material during suturing",
+    "tagline": "Secure Grip. Precise Suturing. Effortless Cutting",
+    "short": "Olsen-Hegar Needle Holder designed for secure needle handling with integrated scissors for efficient suturing and suture cutting.",
+    "description": "The Olsen-Hegar Needle Holder is a versatile surgical instrument designed for secure needle handling and precise suturing. Its integrated scissors allow surgeons to cut suture material without changing instruments, improving efficiency during surgical procedures. Made from durable stainless steel, it provides reliable performance and controlled handling.",
+    "features": [
+      "Integrated needle holder and scissors",
+      "Secure serrated jaws",
+      "Precise needle control",
+      "Durable stainless-steel construction",
+      "Durable stainless-steel construction"
+    ],
+    "images": [
+      "/uploads/jKYe3KlE2E6B.jpeg"
+    ],
+    "featured": false,
+    "createdAt": "2026-09-22T12:54:45.009Z",
+    "updatedAt": "2026-09-22T12:57:22.528Z"
+  }
+]

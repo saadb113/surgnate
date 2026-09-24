@@ -1,0 +1,28 @@
+# Fly.io app config for the Surgnate API.
+# App name must be globally unique on Fly — change it below if "surgnate-api"
+# is taken, then run `fly apps create <name>` with the same name before deploying.
+app = "surgnate-api"
+primary_region = "iad"
+
+[build]
+
+[env]
+  PORT = "4000"
+  DATA_DIR = "/data/data"
+  UPLOAD_DIR = "/data/uploads"
+  CLIENT_ORIGIN = "https://REPLACE-WITH-YOUR-VERCEL-DOMAIN.vercel.app"
+
+[[mounts]]
+  source = "surgnate_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 4000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
