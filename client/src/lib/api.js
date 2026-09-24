@@ -69,7 +69,31 @@ export const api = {
     return request('/upload', { method: 'POST', body: form, auth: true, isForm: true });
   },
 
-  // Data export / import
-  exportData: () => request('/data/export', { auth: true }),
-  importData: (payload) => request('/data/import', { method: 'POST', body: payload, auth: true })
+  // Data export / import (zip: data.json + images/)
+  exportDataZip: async () => {
+    const token = getToken();
+    const res = await fetch(`${API_BASE}/api/data/export`, {
+      headers: token ? { Authorization: `Bearer ${token}` } : {}
+    });
+    if (!res.ok) {
+      let message = `Export failed (${res.status})`;
+      try { message = (await res.json()).error || message; } catch { /* no json body */ }
+      throw new Error(message);
+    }
+    return res.blob();
+  },
+  importDataZip: async (file) => {
+    const form = new FormData();
+    form.append('file', file);
+    const token = getToken();
+    const res = await fetch(`${API_BASE}/api/data/import`, {
+      method: 'POST',
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      body: form
+    });
+    let data = null;
+    try { data = await res.json(); } catch { /* no body */ }
+    if (!res.ok) throw new Error(data?.error || `Import failed (${res.status})`);
+    return data;
+  }
 };
