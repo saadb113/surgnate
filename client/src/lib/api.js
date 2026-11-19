@@ -46,30 +46,13 @@ export const api = {
   login: (username, password) => request('/auth/login', { method: 'POST', body: { username, password } }),
   me: () => request('/auth/me', { auth: true }),
 
-  // Products (public)
-  getProducts: () => request('/products'),
-  getProduct: (slug) => request(`/products/${slug}`),
-  getCategories: () => request('/products/categories'),
-
-  // Products (admin)
-  createProduct: (data) => request('/products', { method: 'POST', body: data, auth: true }),
-  updateProduct: (id, data) => request(`/products/${id}`, { method: 'PUT', body: data, auth: true }),
-  deleteProduct: (id) => request(`/products/${id}`, { method: 'DELETE', auth: true }),
-
   // Messages
   sendMessage: (data) => request('/messages', { method: 'POST', body: data }),
   getMessages: () => request('/messages', { auth: true }),
   markMessageRead: (id, read) => request(`/messages/${id}`, { method: 'PATCH', body: { read }, auth: true }),
   deleteMessage: (id) => request(`/messages/${id}`, { method: 'DELETE', auth: true }),
 
-  // Upload
-  uploadImage: async (file) => {
-    const form = new FormData();
-    form.append('image', file);
-    return request('/upload', { method: 'POST', body: form, auth: true, isForm: true });
-  },
-
-  // Data export / import (zip: data.json + images/)
+  // Data export / import (zip: data.json of inquiries)
   exportDataZip: async () => {
     const token = getToken();
     const res = await fetch(`${API_BASE}/api/data/export`, {

@@ -9,15 +9,16 @@ export default function About() {
       <section className="page-hero">
         <div className="wrap">
           <div className="breadcrumb"><Link to="/">Home</Link><Icon name="chevronRight" /><span>About</span></div>
-          <h1>Precision Has Been Our Only <span className="accent-italic">Product</span></h1>
-          <p>Surgnate exists for a simple reason — surgical teams deserve instruments that behave exactly the same way on the thousandth use as they did on the first.</p>
+          <div className="eyebrow" style={{ color: 'var(--gold-300)', position: 'relative', zIndex: 2 }}>Why Surgnate</div>
+          <h1>Connecting Quality with <span className="accent-italic">Global Healthcare.</span></h1>
+          <p>Surgnate is committed to bringing quality surgical instruments from Sialkot, Pakistan, to the international healthcare market. Through trusted manufacturing partnerships and a customer-focused approach, we aim to provide reliable product solutions, competitive sourcing and professional service to our global customers.</p>
         </div>
       </section>
 
       <section className="section-pad">
         <div className="wrap split">
           <Reveal type="left" className="split-media">
-            <img src="/images/mayo-curved.jpg" alt="Surgnate mayo curved scissor on white background" />
+            <img src="/images/about-hero.webp" alt="Surgnate stainless steel surgical scissor on a light background" />
             <div className="split-media-badge">
               <div className="ring"><b>100%</b></div>
               <span>Individually inspected before packing</span>
@@ -87,7 +88,7 @@ export default function About() {
         <div className="wrap">
           <Reveal type="scale" className="stats-band">
             <div className="grid">
-              <div className="stat"><CountUp end={9} /><span>Product Lines</span></div>
+              <div className="stat"><CountUp end={3} /><span>Instrument Families</span></div>
               <div className="stat"><CountUp end={150} suffix="+" /><span>Hospitals &amp; Clinics</span></div>
               <div className="stat"><CountUp end={20} suffix="+" /><span>Countries Reached</span></div>
               <div className="stat"><CountUp end={100} suffix="%" /><span>Quality Checked</span></div>
@@ -120,7 +121,7 @@ export default function About() {
             <h2>Ready to Equip Your Team With Instruments <span className="accent-italic">Built to Last?</span></h2>
             <p>Reach out with your requirements and our team will help you find the right configuration — steel or TC, straight or curved, retail or bulk.</p>
             <div className="cta-actions">
-              <Link to="/products" className="btn btn-gold">Browse Products <Icon name="arrowRight" /></Link>
+              <Link to="/catalog" className="btn btn-gold">Browse the Catalog <Icon name="arrowRight" /></Link>
               <Link to="/contact" className="btn btn-outline">Contact Our Team</Link>
             </div>
           </Reveal>

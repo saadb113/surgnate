@@ -6,7 +6,6 @@ import { useMessages } from '../context/MessagesContext';
 
 const NAV = [
   { to: '/admin', label: 'Dashboard', icon: 'dashboard', end: true },
-  { to: '/admin/products', label: 'Products', icon: 'box' },
   { to: '/admin/messages', label: 'Messages', icon: 'inbox', badge: true },
   { to: '/admin/data', label: 'Backup & Restore', icon: 'upload' }
 ];

@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DATA_DIR } from './paths.js';
 
-const PRODUCTS_FILE = path.join(DATA_DIR, 'products.json');
 const MESSAGES_FILE = path.join(DATA_DIR, 'messages.json');
 
 function ensureFile(file, fallback) {
@@ -28,9 +27,6 @@ function enqueue(fn) {
 }
 
 export const db = {
-  getProducts() { return readJSON(PRODUCTS_FILE, []); },
-  saveProducts(products) { return enqueue(() => writeJSON(PRODUCTS_FILE, products)); },
-
   getMessages() { return readJSON(MESSAGES_FILE, []); },
   saveMessages(messages) { return enqueue(() => writeJSON(MESSAGES_FILE, messages)); }
 };

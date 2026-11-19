@@ -104,7 +104,7 @@ export default function AdminMessages() {
                   <div className="msg-field"><span>Email</span><b><a href={`mailto:${active.email}`} style={{ color: 'inherit' }}>{active.email}</a></b></div>
                   <div className="msg-field"><span>Phone</span><b><a href={`tel:${active.phone}`} style={{ color: 'inherit' }}>{active.phone}</a></b></div>
                   <div className="msg-field"><span>Country</span><b>{active.country || '—'}</b></div>
-                  <div className="msg-field"><span>Product of Interest</span><b>{active.product || '—'}</b></div>
+                  <div className="msg-field"><span>Category of Interest</span><b>{active.product || '—'}</b></div>
                 </div>
 
                 <div className="msg-body">{active.message}</div>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
-import { useProducts } from '../context/ProductsContext';
 import { useMessages } from '../context/MessagesContext';
+import { CATALOG_SECTIONS, CATALOG_IMAGE_COUNT } from '../lib/catalog';
 
 function timeAgo(iso) {
   const diff = Date.now() - new Date(iso).getTime();
@@ -15,31 +15,29 @@ function timeAgo(iso) {
 }
 
 export default function AdminDashboard() {
-  const { products } = useProducts();
   const { messages, unreadCount } = useMessages();
 
-  const goldCount = products.filter(p => p.finish === 'Gold').length;
-  const featuredCount = products.filter(p => p.featured).length;
   const recentMessages = messages.slice(0, 5);
+  const readCount = messages.length - unreadCount;
 
   return (
     <>
       <div className="admin-stat-grid">
         <div className="admin-stat-card">
-          <div className="ico"><Icon name="box" /></div>
-          <div><b>{products.length}</b><span>Total Products</span></div>
+          <div className="ico"><Icon name="grid" /></div>
+          <div><b>{CATALOG_SECTIONS.length}</b><span>Catalog Sections</span></div>
         </div>
         <div className="admin-stat-card">
-          <div className="ico"><Icon name="star" /></div>
-          <div><b>{featuredCount}</b><span>Featured on Homepage</span></div>
-        </div>
-        <div className="admin-stat-card">
-          <div className="ico"><Icon name="sparkle" /></div>
-          <div><b>{goldCount}</b><span>Gold-Plated TC Variants</span></div>
+          <div className="ico"><Icon name="image" /></div>
+          <div><b>{CATALOG_IMAGE_COUNT}</b><span>Gallery Images</span></div>
         </div>
         <div className="admin-stat-card">
           <div className="ico"><Icon name="inbox" /></div>
           <div><b>{unreadCount}</b><span>Unread Messages</span></div>
+        </div>
+        <div className="admin-stat-card">
+          <div className="ico"><Icon name="check" /></div>
+          <div><b>{readCount}</b><span>Handled Messages</span></div>
         </div>
       </div>
 
@@ -58,7 +56,7 @@ export default function AdminDashboard() {
             <div className="admin-table-wrap">
               <table className="admin-table">
                 <thead>
-                  <tr><th>From</th><th>Product</th><th>Message</th><th>Received</th><th>Status</th></tr>
+                  <tr><th>From</th><th>Category</th><th>Message</th><th>Received</th><th>Status</th></tr>
                 </thead>
                 <tbody>
                   {recentMessages.map(m => (
@@ -82,9 +80,9 @@ export default function AdminDashboard() {
           <h3>Quick Actions</h3>
         </div>
         <div className="admin-panel-body" style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-          <Link to="/admin/products/new" className="btn btn-gold"><Icon name="plus" /> Add New Product</Link>
-          <Link to="/admin/products" className="btn btn-line"><Icon name="box" /> Manage Catalog</Link>
+          <Link to="/catalog" target="_blank" className="btn btn-gold"><Icon name="grid" /> View Catalog</Link>
           <Link to="/admin/messages" className="btn btn-line"><Icon name="inbox" /> Check Inquiries</Link>
+          <Link to="/admin/data" className="btn btn-line"><Icon name="upload" /> Backup &amp; Restore</Link>
           <a href="/" target="_blank" rel="noreferrer" className="btn btn-line"><Icon name="externalLink" /> View Live Site</a>
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function Footer() {
           <Link to="/" className="logo">
             <img className='footerLogo' src="/images/logoMain.png" alt="" />
           </Link>
-          <p>Precision-forged surgical scissors for hospitals, clinics and surgical professionals — crafted in Sialkot, Pakistan and trusted across borders.</p>
+          <p>Precision-forged surgical scissors, forceps and needle holders for hospitals, clinics and surgical professionals — crafted in Sialkot, Pakistan and trusted across borders.</p>
           {/* <div className="social-row">
             <a href="#" aria-label="Facebook"><Icon name="facebook" /></a>
             <a href="#" aria-label="LinkedIn"><Icon name="linkedin" /></a>
@@ -38,7 +38,7 @@ export default function Footer() {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/catalog">Catalog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -46,11 +46,9 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Categories</h4>
           <ul>
-            <li><Link to="/products?cat=Operating">Operating Scissors</Link></li>
-            <li><Link to="/products?cat=Mayo">Mayo Scissors</Link></li>
-            <li><Link to="/products?cat=Iris">Iris Scissors</Link></li>
-            <li><Link to="/products?cat=Metzenbaum">Metzenbaum Scissors</Link></li>
-            <li><Link to="/products?cat=Lister">Lister Bandage</Link></li>
+            <li><Link to="/catalog#scissors">Scissors</Link></li>
+            <li><Link to="/catalog#forceps">Forceps</Link></li>
+            <li><Link to="/catalog#needle-holders">Needle Holders</Link></li>
           </ul>
         </div>
 

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
-import { useProducts } from '../context/ProductsContext';
 import { useToast } from '../context/ToastContext';
+import { CATALOG_SECTIONS } from '../lib/catalog';
 import { api } from '../lib/api';
 
 const FAQS = [
@@ -16,7 +16,6 @@ const FAQS = [
 
 export default function Contact() {
   const [searchParams] = useSearchParams();
-  const { products } = useProducts();
   const showToast = useToast();
 
   const qProduct = searchParams.get('product') || '';
@@ -122,10 +121,11 @@ export default function Contact() {
                   <input id="f-country" placeholder="e.g. Pakistan, UAE, UK..." value={form.country} onChange={e => update('country', e.target.value)} />
                 </div>
                 <div className="field">
-                  <label htmlFor="f-product">Product of Interest</label>
+                  <label htmlFor="f-product">Category of Interest</label>
                   <select id="f-product" value={form.product} onChange={e => update('product', e.target.value)}>
-                    <option value="">Select an instrument (optional)</option>
-                    {products.map(p => <option key={p.id} value={p.name}>{p.name}</option>)}
+                    <option value="">Select a category (optional)</option>
+                    {CATALOG_SECTIONS.map(s => <option key={s.key} value={s.name}>{s.name}</option>)}
+                    <option value="Custom / Other">Custom / Other</option>
                   </select>
                 </div>
               </div>

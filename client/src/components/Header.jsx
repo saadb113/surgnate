@@ -5,7 +5,7 @@ import Icon from './Icon';
 const LINKS = [
   { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About' },
-  { to: '/products', label: 'Products' },
+  { to: '/catalog', label: 'Catalog' },
   { to: '/contact', label: 'Contact' }
 ];
 

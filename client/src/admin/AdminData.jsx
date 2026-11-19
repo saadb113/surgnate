@@ -1,12 +1,10 @@
 import { useRef, useState } from 'react';
 import Icon from '../components/Icon';
-import { useProducts } from '../context/ProductsContext';
 import { useMessages } from '../context/MessagesContext';
 import { useToast } from '../context/ToastContext';
 import { api } from '../lib/api';
 
 export default function AdminData() {
-  const { products, refresh: refreshProducts } = useProducts();
   const { messages, refresh: refreshMessages } = useMessages();
   const showToast = useToast();
   const fileInputRef = useRef(null);
@@ -22,7 +20,7 @@ export default function AdminData() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `surgnate-data-${new Date().toISOString().slice(0, 10)}.zip`;
+      a.download = `surgnate-inquiries-${new Date().toISOString().slice(0, 10)}.zip`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -47,8 +45,8 @@ export default function AdminData() {
     setImporting(true);
     try {
       const result = await api.importDataZip(pendingFile);
-      await Promise.all([refreshProducts(), refreshMessages()]);
-      showToast(`Imported ${result.products} products, ${result.messages} messages, ${result.images} images`, 'check');
+      await refreshMessages();
+      showToast(`Imported ${result.messages} inquiries`, 'check');
       setPendingFile(null);
     } catch (err) {
       showToast(err.message || 'Import failed', 'alert');
@@ -62,7 +60,7 @@ export default function AdminData() {
       <div className="admin-panel-head" style={{ background: 'transparent', border: 'none', padding: '0 0 20px' }}>
         <div>
           <h1 style={{ fontSize: '1.4rem', margin: '0 0 4px' }}>Backup &amp; Restore</h1>
-          <span style={{ fontSize: '.86rem', color: 'var(--ink-400)' }}>Export your catalog and inquiries to a file, or load one to move data between sites.</span>
+          <span style={{ fontSize: '.86rem', color: 'var(--ink-400)' }}>Export your inquiries to a file, or load one to move data between sites.</span>
         </div>
       </div>
 
@@ -72,7 +70,8 @@ export default function AdminData() {
         </div>
         <div className="admin-panel-body">
           <p style={{ color: 'var(--ink-500)', marginBottom: 16 }}>
-            Downloads a single zip file containing all {products.length} products, {messages.length} contact inquiries, and every product image currently on this site — ready to import into another Surgnate install (local or live).
+            Downloads a single zip file containing all {messages.length} contact inquiries — ready to import into another
+            Surgnate install (local or live). The catalog itself is served from the site files and is not part of this export.
           </p>
           <button className="btn btn-gold" onClick={onExport} disabled={exporting}>
             <Icon name="upload" /> {exporting ? 'Exporting…' : 'Export Data File (.zip)'}
@@ -86,7 +85,8 @@ export default function AdminData() {
         </div>
         <div className="admin-panel-body">
           <p style={{ color: 'var(--ink-500)', marginBottom: 16 }}>
-            Loads a previously exported .zip file into this site. <b>This replaces every product and message currently here</b> and adds the images from the file — the existing catalog and inquiries are removed and swapped for what's in the file. This can't be undone.
+            Loads a previously exported .zip file into this site. <b>This replaces every inquiry currently here</b> — the
+            existing messages are removed and swapped for what's in the file. This can't be undone.
           </p>
           <label className={`image-drop${importing ? ' uploading' : ''}`} style={{ maxWidth: 260 }}>
             <Icon name="upload" />
@@ -100,9 +100,9 @@ export default function AdminData() {
         <div className="admin-modal-scrim" onClick={() => !importing && setPendingFile(null)}>
           <div className="admin-modal" onClick={e => e.stopPropagation()}>
             <div className="ico"><Icon name="alert" /></div>
-            <h4>Replace all site data?</h4>
+            <h4>Replace all inquiry data?</h4>
             <p>
-              "{pendingFile.name}" will overwrite every product and message currently on this site. Your current data was not
+              "{pendingFile.name}" will overwrite every message currently on this site. Your current data was not
               automatically backed up — export it first if you want to keep a copy. This can't be undone.
             </p>
             <div className="actions">

@@ -2,16 +2,9 @@ import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
 import CountUp from '../components/CountUp';
-import ProductCard from '../components/ProductCard';
-import { useProducts } from '../context/ProductsContext';
-import { categoryMeta } from '../lib/categories';
-
-const CATEGORY_ORDER = ['Operating', 'Mayo', 'Iris', 'Metzenbaum', 'Lister'];
+import { CATALOG_SECTIONS, CATALOG_IMAGE_COUNT } from '../lib/catalog';
 
 export default function Home() {
-  const { products, categories, loading } = useProducts();
-  const featured = products.filter(p => p.featured).slice(0, 6);
-  const catKeys = [...new Set([...CATEGORY_ORDER, ...categories])];
 
   return (
     <>
@@ -23,16 +16,20 @@ export default function Home() {
             <div className="hero-eyebrow">
               <span className="dot"><Icon name="check" /></span> Built for Healthcare Professionals
             </div>
-            <Reveal as="h1">Precision-Forged <em>Surgical Scissors</em> Hospitals Trust</Reveal>
-            <Reveal as="p" className="lede" delay={.1}>
-              Surgnate designs and manufactures Operating, Mayo, Iris, Metzenbaum and Lister Bandage scissors. mirror-finished, autoclavable, and engineered for the cut that has to be right the first time.
+            <Reveal as="h1">Precision. Quality. <em>Excellence.</em></Reveal>
+            <Reveal as="p" className="hero-sub" delay={.06}>Your Global Partner in Surgical Instruments.</Reveal>
+            <Reveal as="p" className="lede" delay={.12}>
+              Surgnate specializes in the international supply of quality surgical instruments, offering a
+              comprehensive range of scissors, forceps, needle holders and other surgical instruments. Sourced
+              from Sialkot, Pakistan, our products reflect skilled craftsmanship, precision finishing and
+              quality-focused selection to serve hospitals, clinics and medical distributors worldwide.
             </Reveal>
             <Reveal className="hero-actions" delay={.2}>
-              <Link to="/products" className="btn btn-gold">Explore the Range <Icon name="arrowRight" /></Link>
+              <Link to="/catalog" className="btn btn-gold">Explore the Range <Icon name="arrowRight" /></Link>
               <Link to="/contact" className="btn btn-outline">Request a Quote</Link>
             </Reveal>
             <Reveal className="hero-stats" delay={.3}>
-              <div className="stat"><CountUp end={9} /><span>Instrument Types</span></div>
+              <div className="stat"><CountUp end={CATALOG_IMAGE_COUNT} /><span>Catalog Patterns</span></div>
               <div className="stat"><CountUp end={100} suffix="%" /><span>Autoclavable Steel</span></div>
               <div className="stat"><CountUp end={150} suffix="+" /><span>Hospitals &amp; Clinics Served</span></div>
               <div className="stat"><CountUp end={20} suffix="+" /><span>Export Markets</span></div>
@@ -40,7 +37,7 @@ export default function Home() {
           </div>
           <Reveal type="scale" className="hero-visual">
             <div className="hero-card">
-              <img src="/images/HomeImg2.png" alt="Surgnate gold-plated tungsten carbide surgical scissor" />
+              <img src="/images/home-hero.webp" alt="Surgnate surgical scissors and needle holders on a stainless steel surface" />
             </div>
             <div className="hero-float fl-1">
               <div className="ico"><Icon name="droplet" /></div>
@@ -66,41 +63,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CATEGORIES */}
-      <section style={{display : "none"}} className="section-pad">
-        <div className="wrap">
-          <Reveal className="section-head center">
-            <div className="eyebrow" style={{ justifyContent: 'center' }}>Our Range</div>
-            <h2>Five Instrument Families. <span className="accent-italic">One Standard.</span></h2>
-          </Reveal>
-          <div className="cat-grid">
-            {catKeys.map((key, i) => {
-              const meta = categoryMeta(key);
-              return (
-                <Reveal as={Link} to={`/products?cat=${key}`} key={key} delay={i * 0.06} className="cat-card">
-                  <div className="ico"><Icon name={meta.icon} /></div>
-                  <h4>{meta.name}</h4>
-                  <span>{meta.desc}</span>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* FEATURED PRODUCTS */}
+      {/* CATALOG SECTIONS */}
       <section className="section-pad" style={{ background: 'var(--surface)', borderBlock: '1px solid var(--line)' }}>
         <div className="wrap">
           <Reveal className="section-head between">
             <div>
-              <div className="eyebrow">Featured Instruments</div>
-              <h2>Signature Pieces From the Bench</h2>
+              <div className="eyebrow">The Surgnate Catalog</div>
+              <h2>Three Families. <span className="accent-italic">One Standard.</span></h2>
             </div>
-            <Link to="/products" className="btn btn-line">View All Products <Icon name="arrowRight" /></Link>
+            <Link to="/catalog" className="btn btn-line">Open Full Catalog <Icon name="arrowRight" /></Link>
           </Reveal>
-          <div className="prod-grid">
-            {!loading && featured.map((p, i) => <ProductCard key={p.id} product={p} delay={i * 0.08} />)}
+          <div className="cat-grid catalog-showcase-grid">
+            {CATALOG_SECTIONS.map((section, i) => (
+              <Reveal as={Link} to={`/catalog#${section.key}`} key={section.key} delay={i * 0.06} className="cat-card showcase">
+                <div className="cat-cover">
+                  <img src={section.images[0]} alt={`${section.name} — Surgnate catalog`} loading="lazy" />
+                  <span className="cat-cover-count">{section.images.length} images</span>
+                </div>
+                <div className="cat-body">
+                  <div className="ico"><Icon name={section.icon} /></div>
+                  <h4>{section.name}</h4>
+                  <span>{section.tagline}</span>
+                </div>
+              </Reveal>
+            ))}
           </div>
+          <Reveal className="catalog-showcase-foot" delay={0.15}>
+            <span>{CATALOG_IMAGE_COUNT} pattern sheets across the three families — every one viewable full screen.</span>
+            <Link to="/catalog" className="btn btn-navy btn-sm">Browse the Gallery <Icon name="arrowRight" /></Link>
+          </Reveal>
         </div>
       </section>
 
@@ -186,7 +177,7 @@ export default function Home() {
         <div className="wrap">
           <Reveal type="scale" className="stats-band">
             <div className="grid">
-              <div className="stat"><CountUp end={9} /><span>Product Lines</span></div>
+              <div className="stat"><CountUp end={CATALOG_SECTIONS.length} /><span>Instrument Families</span></div>
               <div className="stat"><CountUp end={150} suffix="+" /><span>Hospitals &amp; Clinics</span></div>
               <div className="stat"><CountUp end={20} suffix="+" /><span>Countries Reached</span></div>
               <div className="stat"><CountUp end={100} suffix="%" /><span>Quality Checked</span></div>
