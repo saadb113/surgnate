@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
+import { usePageMeta } from '../lib/meta';
 
 export default function PrivacyPolicy() {
-  useEffect(() => { document.title = 'Privacy Policy — Surgnate'; }, []);
+  usePageMeta({
+    title: 'Privacy Policy — Surgnate',
+    description: 'How Surgnate collects, uses and protects the information you share when requesting a quote or browsing our catalog.',
+    path: '/privacy-policy'
+  });
 
   return (
     <>

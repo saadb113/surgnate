@@ -4,6 +4,7 @@ import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
 import { useToast } from '../context/ToastContext';
 import { CATALOG_SECTIONS } from '../lib/catalog';
+import { usePageMeta } from '../lib/meta';
 import { api } from '../lib/api';
 
 const FAQS = [
@@ -17,6 +18,12 @@ const FAQS = [
 export default function Contact() {
   const [searchParams] = useSearchParams();
   const showToast = useToast();
+
+  usePageMeta({
+    title: 'Contact Surgnate — Request a Quote for Surgical Instruments',
+    description: 'Request pricing and availability for surgical scissors, forceps and needle holders. Bulk and export orders welcome — crafted in Sialkot, Pakistan, shipped worldwide.',
+    path: '/contact'
+  });
 
   const qProduct = searchParams.get('product') || '';
   const qQty = searchParams.get('qty');

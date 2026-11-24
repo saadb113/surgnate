@@ -3,6 +3,7 @@ import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import Icon from '../components/Icon';
 import { useAuth } from '../context/AuthContext';
 import { useMessages } from '../context/MessagesContext';
+import { usePageMeta } from '../lib/meta';
 
 const NAV = [
   { to: '/admin', label: 'Dashboard', icon: 'dashboard', end: true },
@@ -15,6 +16,8 @@ export default function AdminLayout() {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { unreadCount: unread } = useMessages();
+
+  usePageMeta({ title: 'Admin — Surgnate', path: '/admin', noindex: true });
 
   function onLogout() {
     logout();

@@ -2,8 +2,14 @@ import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
 import CountUp from '../components/CountUp';
+import { usePageMeta } from '../lib/meta';
 
 export default function About() {
+  usePageMeta({
+    title: 'Why Surgnate — Connecting Quality with Global Healthcare',
+    description: 'Surgnate brings quality surgical instruments from Sialkot, Pakistan, to the international healthcare market through trusted manufacturing partnerships.',
+    path: '/about'
+  });
   return (
     <>
       <section className="page-hero">

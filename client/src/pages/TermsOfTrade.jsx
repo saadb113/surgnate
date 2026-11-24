@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
+import { usePageMeta } from '../lib/meta';
 
 export default function TermsOfTrade() {
-  useEffect(() => { document.title = 'Terms of Trade — Surgnate'; }, []);
+  usePageMeta({
+    title: 'Terms of Trade — Surgnate',
+    description: 'The terms governing quotations, orders, payment, shipping and specifications for Surgnate surgical instruments.',
+    path: '/terms-of-trade'
+  });
 
   return (
     <>

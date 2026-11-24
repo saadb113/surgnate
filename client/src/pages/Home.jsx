@@ -3,8 +3,14 @@ import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
 import CountUp from '../components/CountUp';
 import { CATALOG_SECTIONS, CATALOG_IMAGE_COUNT } from '../lib/catalog';
+import { usePageMeta } from '../lib/meta';
 
 export default function Home() {
+  usePageMeta({
+    title: 'Surgnate — Surgical Instruments from Sialkot, Pakistan',
+    description: 'Surgnate supplies surgical scissors, forceps and needle holders to hospitals, clinics and medical distributors worldwide. Precision instruments crafted in Sialkot, Pakistan.',
+    path: '/'
+  });
 
   return (
     <>

@@ -4,8 +4,15 @@ import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
 import Lightbox from '../components/Lightbox';
 import { CATALOG_SECTIONS, CATALOG_IMAGE_COUNT, CATALOG_COVER, sectionByKey } from '../lib/catalog';
+import { usePageMeta } from '../lib/meta';
 
 export default function Catalog() {
+  usePageMeta({
+    title: 'Surgical Instrument Catalog — Scissors, Forceps & Needle Holders | Surgnate',
+    description: 'Browse the Surgnate catalog: surgical scissors, forceps and needle holders, documented pattern by pattern with sizes, materials and finishes.',
+    path: '/catalog',
+    image: '/images/catalog/cover.jpg'
+  });
   const { hash } = useLocation();
   const [light, setLight] = useState(null);
 
